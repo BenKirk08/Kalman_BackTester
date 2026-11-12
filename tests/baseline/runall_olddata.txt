@@ -1,0 +1,172 @@
+=== single runs: train = 2016-2021, test = 2022-2026 (out of sample) ===
+pair        run               trades    win%  stops      gross       cost        net   tradable?
+----------------------------------------------------------------------------------------------
+xom/cvx     train 2016-21         18    44.4     10        695        325        371    no
+xom/cvx     test 2022-26          14    35.7      9       -175        267       -443    no
+xom/cvx     full 2016-26          32    40.6     19        520        592        -72    no
+v/ma        train 2016-21         16    37.5     10       -161        301       -462    no
+v/ma        test 2022-26          23    43.5     13        516        427         89    no
+v/ma        full 2016-26          39    41.0     23        355        727       -373    no
+xom/cvx     full, adaptive R      29    34.5     19       -728        535      -1263    no
+v/ma        full, adaptive R       1   100.0      0        231         19        212    no
+
+============ v / ma   (train 2016-21) ============
+(filter + z-scores use all dates, trades only happen inside the run's window)
+
+<------Cointegration (Johansen)------>
+IS cointegrated at 5% -> trace 28.15 vs threshold 17.22 (needs to be above. threshold set by drift 1.44)
+
+<------Kalman Filter (hedge ratio, one line per year)------>
+2016-07-26  beta = 0.998  spread = -0.0103
+2017-07-24  beta = 0.963  spread = 0.0110
+2018-07-20  beta = 0.927  spread = 0.0061
+2019-07-19  beta = 0.899  spread = -0.0006
+2020-07-16  beta = 0.880  spread = -0.0004
+2021-07-14  beta = 0.868  spread = -0.0035
+2022-07-12  beta = 0.861  spread = 0.0067
+2023-07-11  beta = 0.858  spread = -0.0018
+2024-07-09  beta = 0.857  spread = -0.0047
+2025-07-09  beta = 0.873  spread = 0.0042
+2026-07-08  beta = 0.878  spread = 0.0000
+beta range: [0.846, 0.998]
+R range: [1.0e-04, 1.0e-04]   days at floor: 0 (0.0%)
+
+<------Mean Reversion (OU)------>
+OU slope = -0.559   half-life = 0.85 days   mean-reverting: yes
+
+<------Z-Scores (how stretched the spread is)------>
+days with |z|>2: 161 / 2451 (6.6%)
+most extreme z = 9.52 on 2026-04-29
+
+<------Regime Gates (days allowed to open a trade)------>
+evaluated days: 1761   gate open: 430 (24.4%)
+blocked by johansen: 576   half-life: 95
+
+<------Pair Verdict------>
+cointegration: PASS
+half-life:     PASS (0.85 days, band 0.5-30)
+economics:     FAIL (avg trade vs 2x avg cost)
+==> NOT TRADABLE
+
+<------Metrics------>
+trades 16   win rate 37.50%   stops 10   timeouts 1   avg hold 7.69 days
+avg win $176.42   avg loss $-152.00   profit factor 0.70
+gross $-160.97   costs $300.55   net $-461.53
+capital base (avg gross exposure) $18701.26   time in market 25.95%
+annual return -1.31%   annual vol 3.73%
+SHARPE -0.352   max drawdown $827.24 (4.42% of capital)   calmar -0.30
+
+<------Filter Consistency (NIS, should be ~1)------>
+NIS = 0.332 over 2411 days   95% band [0.944, 1.056]
+  -> OVER CAUTIOUS: surprises smaller than forecast. R and/or Q too large so beta will be stale.
+
+============ walk forward: v / ma   (control: same settings every year, fixed R) ============
+year          Q        R  entry  exit  window  trainSharpe  trainTrades  testTrades   testNet
+---------------------------------------------------------------------------------------------
+2020      1e-06    1e-04    2.0   0.0      60         0.00            0           8      -602
+2021      1e-06    1e-04    2.0   0.0      60        -0.61            7           8       140
+2022      1e-06    1e-04    2.0   0.0      60        -0.35           16           9       173
+2023      1e-06    1e-04    2.0   0.0      60        -0.15           25           8       -54
+2024      1e-06    1e-04    2.0   0.0      60         0.11           24           6       -30
+2025      1e-06    1e-04    2.0   0.0      60         0.06           23           0         0
+2026      1e-06    1e-04    2.0   0.0      60        -0.11           14           0         0
+
+out of sample 2020-2026, all years combined:
+<------Metrics------>
+trades 39   win rate 41.03%   stops 23   timeouts 1   avg hold 7.03 days
+avg win $179.75   avg loss $-141.25   profit factor 0.89
+gross $354.64   costs $727.36   net $-372.72
+capital base (avg gross exposure) $18615.03   time in market 22.63%
+annual return -0.42%   annual vol 3.10%
+SHARPE -0.134   max drawdown $868.53 (4.67% of capital)   calmar -0.09
+
+============ walk forward: v / ma   (settings re-fit each year on the years before, fixed R) ============
+year          Q        R  entry  exit  window  trainSharpe  trainTrades  testTrades   testNet
+---------------------------------------------------------------------------------------------
+2020      1e-06    3e-06    2.0   0.0      60         0.00            0   stood aside
+2021      1e-06    1e-05    2.0   0.0      60         0.00            0   stood aside
+2022      1e-06    1e-05    2.0   0.0      60         0.00            0   stood aside
+2023      1e-06    1e-05    2.0   0.0      60         0.00            0   stood aside
+2024      1e-06    3e-06    2.0   0.0      60         0.00            0   stood aside
+2025      1e-06    3e-06    2.0   0.0      60         0.00            0   stood aside
+2026      1e-06    1e-06    2.0   0.0      60         0.00            0   stood aside
+
+no out of sample trades -> stood aside every year
+
+============ walk forward: v / ma   (settings re-fit each year on the years before, adaptive R) ============
+year          Q        R  entry  exit  window  trainSharpe  trainTrades  testTrades   testNet
+---------------------------------------------------------------------------------------------
+2020      1e-06    adapt    2.0   0.0      60         0.00            0   stood aside
+2021      1e-06    adapt    2.0   0.0      60         0.00            0   stood aside
+2022      1e-06    adapt    2.0   0.0      60         0.00            0   stood aside
+2023      1e-06    adapt    2.0   0.0      60         0.00            0   stood aside
+2024      1e-06    adapt    2.0   0.0      60         0.00            0   stood aside
+2025      1e-06    adapt    2.0   0.0      60         0.00            0   stood aside
+2026      1e-06    adapt    2.0   0.0      60         0.00            0   stood aside
+
+no out of sample trades -> stood aside every year
+
+============ walk forward: xom / cvx   (control: same settings every year, fixed R) ============
+year          Q        R  entry  exit  window  trainSharpe  trainTrades  testTrades   testNet
+---------------------------------------------------------------------------------------------
+2020      1e-06    1e-04    2.0   0.0      60         5.59            1           7       417
+2021      1e-06    1e-04    2.0   0.0      60         1.46            7          10      -216
+2022      1e-06    1e-04    2.0   0.0      60         0.23           18           4      -853
+2023      1e-06    1e-04    2.0   0.0      60        -0.47           21           0         0
+2024      1e-06    1e-04    2.0   0.0      60        -1.26           14           0         0
+2025      1e-06    1e-04    2.0   0.0      60        -5.01            4           7       609
+2026      1e-06    1e-04    2.0   0.0      60         0.60            6           3      -553
+
+out of sample 2020-2026, all years combined:
+<------Metrics------>
+trades 31   win rate 35.48%   stops 20   timeouts 0   avg hold 6.45 days
+avg win $290.20   avg loss $-189.39   profit factor 0.84
+gross $-23.10   costs $572.45   net $-595.55
+capital base (avg gross exposure) $18379.21   time in market 14.58%
+annual return -0.60%   annual vol 3.25%
+SHARPE -0.183   max drawdown $2219.35 (12.08% of capital)   calmar -0.05
+
+============ walk forward: xom / cvx   (settings re-fit each year on the years before, fixed R) ============
+year          Q        R  entry  exit  window  trainSharpe  trainTrades  testTrades   testNet
+---------------------------------------------------------------------------------------------
+2020      3e-06    1e-06    2.0   0.0      60         0.00            0   stood aside
+2021      1e-05    1e-06    2.0   0.0      60         0.00            0   stood aside
+2022      1e-05    1e-06    2.0   0.0      60         0.00            0   stood aside
+2023      1e-05    1e-06    2.0   0.0      60         0.00            0   stood aside
+2024      3e-06    3e-06    2.0   0.0      60         0.00            0   stood aside
+2025      3e-06    3e-06    2.0   0.0      60         0.00            0   stood aside
+2026      3e-06    1e-06    2.0   0.0      60         0.00            0   stood aside
+
+no out of sample trades -> stood aside every year
+
+============ walk forward: xom / cvx   (settings re-fit each year on the years before, adaptive R) ============
+year          Q        R  entry  exit  window  trainSharpe  trainTrades  testTrades   testNet
+---------------------------------------------------------------------------------------------
+2020      3e-06    adapt    2.0   0.0      60         0.00            0   stood aside
+2021      3e-06    adapt    1.5   0.0      40         1.69            9          15     -1143
+2022      3e-06    adapt    2.0   0.0      40         0.70           13           2      -255
+2023      3e-06    adapt    2.0   0.0      40         0.31           15           0         0
+2024      3e-06    adapt    2.0   0.0      40         0.07           11           0         0
+2025      3e-06    adapt    2.0   0.0      60         0.00            0   stood aside
+2026      3e-06    adapt    2.0   0.0      60         0.00            0   stood aside
+
+out of sample 2020-2026, all years combined:
+<------Metrics------>
+trades 17   win rate 29.41%   stops 12   timeouts 0   avg hold 7.00 days
+avg win $239.72   avg loss $-216.33   profit factor 0.46
+gross $-1084.37   costs $313.04   net $-1397.41
+capital base (avg gross exposure) $18274.58   time in market 45.59%
+annual return -7.38%   annual vol 5.30%
+SHARPE -1.392   max drawdown $1676.00 (9.17% of capital)   calmar -0.81
+
+=== exit design sensitivity (walk forward control, out of sample 2020-2026) ===
+frozen = exits judged on the spread the trade entered on (final design), live-z = old exits
+pair      exits    stopZ  trades     net   sharpe   maxDD
+v/ma      frozen   3.5        39    -373    -0.13     869
+v/ma      frozen   6          30      99     0.03    1023
+v/ma      live-z   3.5        45    1192     0.51     461
+v/ma      live-z   6          43    1040     0.44     498
+xom/cvx   frozen   3.5        31    -596    -0.18    2219
+xom/cvx   frozen   6          24   -1732    -0.36    4103
+xom/cvx   live-z   3.5        29    -219    -0.08    1674
+xom/cvx   live-z   6          29    -219    -0.08    1674

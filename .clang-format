@@ -1,0 +1,54 @@
+#formatting for the non-legacy code (the engine, the research layer, the checks, main.cpp)
+#the files of the original single-pair pipeline and the hold-out seal are listed in .clang-format-ignore and are
+#never reformatted. comments are never re-wrapped (ReflowComments: Never), so a long one-line comment stays one line
+#    clang-format -i main.cpp Engine.cpp Engine.h Research.cpp Research.h Market.cpp Market.h Screen.cpp Screen.h Verify.cpp Verify.h Bench.cpp Bench.h
+---
+Language: Cpp
+BasedOnStyle: LLVM
+Standard: c++17
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ColumnLimit: 120
+AccessModifierOffset: -4
+ContinuationIndentWidth: 4
+PointerAlignment: Left
+ReferenceAlignment: Left
+DerivePointerAlignment: false
+BreakBeforeBraces: Attach
+AlignAfterOpenBracket: Align
+AlignOperands: Align
+AlignTrailingComments:
+  Kind: Leave
+AllowShortFunctionsOnASingleLine: All
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+AllowShortLoopsOnASingleLine: true
+AllowShortBlocksOnASingleLine: Empty
+AllowShortCaseLabelsOnASingleLine: true
+AllowShortLambdasOnASingleLine: All
+AlwaysBreakTemplateDeclarations: Yes
+BinPackArguments: true
+BinPackParameters: BinPack
+BreakStringLiterals: false
+Cpp11BracedListStyle: true
+FixNamespaceComments: false
+IncludeBlocks: Preserve
+IndentCaseLabels: true
+InsertNewlineAtEOF: true
+KeepEmptyLines:
+  AtEndOfFile: false
+  AtStartOfBlock: false
+  AtStartOfFile: false
+MaxEmptyLinesToKeep: 1
+NamespaceIndentation: None
+PenaltyReturnTypeOnItsOwnLine: 1000
+ReflowComments: Never
+SortIncludes: Never
+SortUsingDeclarations: Never
+SpaceAfterCStyleCast: false
+SpaceBeforeParens: ControlStatements
+SpacesBeforeTrailingComments: 1
+SpacesInLineCommentPrefix:
+  Minimum: 0
+  Maximum: -1
+---

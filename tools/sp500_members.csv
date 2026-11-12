@@ -1,0 +1,504 @@
+ticker,dateAdded,sector
+mmm,1957-03-04,Industrials
+aos,2017-07-26,Industrials
+abt,1957-03-04,Health Care
+abbv,2012-12-31,Health Care
+acn,2011-07-06,Information Technology
+adbe,1997-05-05,Information Technology
+amd,2017-03-20,Information Technology
+aes,1998-10-02,Utilities
+afl,1999-05-28,Financials
+a,2000-06-05,Health Care
+apd,1985-04-30,Materials
+abnb,2023-09-18,Consumer Discretionary
+akam,2007-07-12,Information Technology
+alb,2016-07-01,Materials
+are,2017-03-20,Real Estate
+algn,2017-06-19,Health Care
+alle,2013-12-02,Industrials
+lnt,2016-07-01,Utilities
+all,1995-07-13,Financials
+googl,2006-04-03,Communication Services
+goog,2014-04-03,Communication Services
+mo,1957-03-04,Consumer Staples
+amzn,2005-11-18,Consumer Discretionary
+amcr,2019-06-07,Materials
+aee,1991-09-19,Utilities
+aep,1957-03-04,Utilities
+axp,1976-06-30,Financials
+aig,1980-03-31,Financials
+amt,2007-11-19,Real Estate
+awk,2016-03-04,Utilities
+amp,2005-10-03,Financials
+ame,2013-09-23,Industrials
+amgn,1992-01-02,Health Care
+aph,2008-09-30,Information Technology
+adi,1999-10-12,Information Technology
+aon,1996-04-23,Financials
+apa,1997-07-28,Energy
+apo,2024-12-23,Financials
+aapl,1982-11-30,Information Technology
+amat,1995-03-16,Information Technology
+app,2025-09-22,Communication Services
+aptv,2012-12-24,Consumer Discretionary
+acgl,2022-11-01,Financials
+adm,1957-03-04,Consumer Staples
+ares,2025-12-11,Financials
+anet,2018-08-28,Information Technology
+ajg,2016-05-31,Financials
+aiz,2007-04-10,Financials
+t,1983-11-30,Communication Services
+ato,2019-02-15,Utilities
+adsk,1989-12-01,Information Technology
+adp,1981-03-31,Industrials
+azo,1997-01-02,Consumer Discretionary
+avy,1987-12-31,Materials
+axon,2023-05-04,Industrials
+bkr,2017-07-07,Energy
+ball,1984-10-31,Materials
+bac,1976-06-30,Financials
+bax,1972-09-30,Health Care
+bdx,1972-09-30,Health Care
+brk-b,2010-02-16,Financials
+bby,1999-06-29,Consumer Discretionary
+tech,2021-08-30,Health Care
+biib,2003-11-13,Health Care
+blk,2011-04-04,Financials
+bx,2023-09-18,Financials
+xyz,2025-07-23,Financials
+be,2026-09-21,Industrials
+bny,1995-03-31,Financials
+ba,1957-03-04,Industrials
+bkng,2009-11-06,Consumer Discretionary
+bsx,1995-02-24,Health Care
+bmy,1957-03-04,Health Care
+avgo,2014-05-08,Information Technology
+br,2018-06-18,Industrials
+bro,2021-09-20,Financials
+bf-b,1982-10-31,Consumer Staples
+bg,2023-03-15,Consumer Staples
+bxp,2006-04-03,Real Estate
+chrw,2007-03-02,Industrials
+cdns,2017-09-18,Information Technology
+cpt,2022-04-04,Real Estate
+cof,1998-07-01,Financials
+cah,1997-05-27,Health Care
+ccl,1998-12-22,Consumer Discretionary
+carr,2020-04-03,Industrials
+cvna,2025-12-22,Consumer Discretionary
+casy,2026-04-09,Consumer Staples
+cat,1957-03-04,Industrials
+cboe,2017-03-01,Financials
+cbre,2006-11-10,Real Estate
+cdw,2019-09-23,Information Technology
+cor,2001-08-30,Health Care
+cnc,2016-03-30,Health Care
+cnp,1985-07-31,Utilities
+cf,2008-08-27,Materials
+crl,2021-05-14,Health Care
+schw,1997-06-02,Financials
+chtr,2016-09-08,Communication Services
+cvx,1957-03-04,Energy
+cmg,2011-04-28,Consumer Discretionary
+cb,2010-07-15,Financials
+chd,2015-12-29,Consumer Staples
+cien,2026-02-09,Information Technology
+ci,1976-06-30,Health Care
+cinf,1997-12-18,Financials
+ctas,2001-03-01,Industrials
+csco,1993-12-01,Information Technology
+c,1988-05-31,Financials
+cfg,2016-01-29,Financials
+clx,1969-03-31,Consumer Staples
+cme,2006-08-11,Financials
+cms,1957-03-04,Utilities
+ko,1957-03-04,Consumer Staples
+ctsh,2006-11-17,Information Technology
+cohr,2026-03-23,Information Technology
+coin,2025-05-19,Financials
+cl,1957-03-04,Consumer Staples
+cmcsa,2002-11-19,Communication Services
+fix,2025-12-22,Industrials
+cop,1957-03-04,Energy
+ed,1957-03-04,Utilities
+stz,2005-07-01,Consumer Staples
+ceg,2022-02-02,Utilities
+coo,2016-09-23,Health Care
+cprt,2018-07-02,Industrials
+glw,1995-02-27,Information Technology
+cpay,2018-06-20,Financials
+csgp,2022-09-19,Real Estate
+cost,1993-10-01,Consumer Staples
+crh,2025-12-22,Materials
+crwd,2024-06-24,Information Technology
+cci,2012-03-14,Real Estate
+csx,1957-03-04,Industrials
+cmi,1965-03-31,Industrials
+cvs,1957-03-04,Health Care
+dhr,1998-11-18,Health Care
+dri,1995-05-31,Consumer Discretionary
+ddog,2025-07-09,Information Technology
+dva,2008-07-31,Health Care
+deck,2024-03-18,Consumer Discretionary
+de,1957-03-04,Industrials
+dell,2024-09-23,Information Technology
+dal,2013-09-11,Industrials
+dvn,2000-08-30,Energy
+dxcm,2020-05-12,Health Care
+fang,2018-12-03,Energy
+dlr,2016-05-18,Real Estate
+dg,2012-12-03,Consumer Staples
+dltr,2011-12-19,Consumer Staples
+d,2016-11-30,Utilities
+dpz,2020-05-12,Consumer Discretionary
+dash,2025-03-24,Consumer Discretionary
+dov,1985-10-31,Industrials
+dow,2019-04-01,Materials
+dhi,2005-06-22,Consumer Discretionary
+dte,1957-03-04,Utilities
+duk,1976-06-30,Utilities
+dd,2019-06-03,Industrials
+etn,1957-03-04,Industrials
+ebay,2002-07-22,Consumer Discretionary
+echo,2026-03-23,Communication Services
+ecl,1989-01-31,Materials
+eix,1957-03-04,Utilities
+ew,2011-04-01,Health Care
+elv,2002-07-25,Health Care
+eme,2025-09-22,Industrials
+emr,1965-03-31,Industrials
+etr,1957-03-04,Utilities
+eog,2000-11-02,Energy
+eqt,2022-10-03,Energy
+efx,1997-06-19,Industrials
+eqix,2015-03-20,Real Estate
+erie,2024-09-23,Financials
+ess,2014-04-02,Real Estate
+el,2006-01-05,Consumer Staples
+eg,2017-06-19,Financials
+evrg,2018-06-05,Utilities
+p,2026-09-21,Information Technology
+es,2009-07-24,Utilities
+exc,1957-03-04,Utilities
+exe,2025-03-24,Energy
+expe,2007-10-02,Consumer Discretionary
+expd,2007-10-10,Industrials
+exr,2016-01-19,Real Estate
+xom,1957-03-04,Energy
+ffiv,2010-12-20,Information Technology
+fds,2021-12-20,Financials
+fico,2023-03-20,Information Technology
+fast,2008-09-15,Industrials
+frt,2016-02-01,Real Estate
+fdx,1980-12-31,Industrials
+fdxf,2026-06-01,Industrials
+ferg,2026-08-05,Industrials
+fis,2006-11-10,Financials
+fitb,1996-03-29,Financials
+fslr,2022-12-19,Information Technology
+fe,1997-11-28,Utilities
+fisv,2001-04-02,Financials
+flex,2026-06-22,Information Technology
+f,1957-03-04,Consumer Discretionary
+ftnt,2018-10-11,Information Technology
+ftv,2016-07-01,Industrials
+foxa,2019-03-19,Communication Services
+fox,2019-03-19,Communication Services
+ben,1998-04-30,Financials
+fcx,2011-07-01,Materials
+grmn,2012-12-12,Consumer Discretionary
+it,2017-04-05,Information Technology
+ge,1957-03-04,Industrials
+gehc,2023-01-04,Health Care
+gev,2024-04-02,Industrials
+gen,2003-03-25,Information Technology
+gnrc,2021-03-22,Industrials
+gd,1957-03-04,Industrials
+gis,1957-03-04,Consumer Staples
+gm,2013-06-06,Consumer Discretionary
+gpc,1973-12-31,Consumer Discretionary
+gild,2004-07-01,Health Care
+gpn,2016-04-25,Financials
+gl,1989-04-30,Financials
+gddy,2024-06-24,Information Technology
+gs,2002-07-22,Financials
+hal,1957-03-04,Energy
+hig,1957-03-04,Financials
+has,1984-09-30,Consumer Discretionary
+hca,2015-01-27,Health Care
+doc,2008-03-31,Real Estate
+hsic,2015-03-17,Health Care
+hsy,1957-03-04,Consumer Staples
+hpe,2015-11-02,Information Technology
+hlt,2017-06-19,Consumer Discretionary
+hd,1988-03-31,Consumer Discretionary
+hona,2026-06-29,Industrials
+hon,1957-03-04,Industrials
+hrl,2009-03-04,Consumer Staples
+hst,2007-03-20,Real Estate
+hwm,2016-10-21,Industrials
+hpq,1974-12-31,Information Technology
+hubb,2023-10-18,Industrials
+hum,2012-12-10,Health Care
+hban,1997-08-28,Financials
+hii,2018-01-03,Industrials
+ibm,1957-03-04,Information Technology
+iex,2019-08-09,Industrials
+idxx,2017-01-05,Health Care
+itw,1986-02-28,Industrials
+ilmn,2026-09-21,Health Care
+incy,2017-02-28,Health Care
+ir,2020-03-03,Industrials
+podd,2023-03-15,Health Care
+intc,1976-12-31,Information Technology
+ibkr,2025-08-28,Financials
+ice,2007-09-26,Financials
+iff,1976-03-31,Materials
+ip,1957-03-04,Materials
+intu,2000-12-05,Information Technology
+isrg,2008-06-02,Health Care
+ivz,2008-08-21,Financials
+invh,2022-09-19,Real Estate
+iqv,2017-08-29,Health Care
+irm,2009-01-06,Real Estate
+jbht,2015-07-01,Industrials
+jbl,2023-12-18,Information Technology
+jkhy,2018-11-13,Financials
+j,2007-10-26,Industrials
+jnj,1973-06-30,Health Care
+jci,2010-08-27,Industrials
+jpm,1975-06-30,Financials
+kdp,2022-06-21,Consumer Staples
+key,1994-03-01,Financials
+keys,2018-11-06,Information Technology
+kmb,1957-03-04,Consumer Staples
+kim,2006-04-04,Real Estate
+kmi,2012-05-25,Energy
+kkr,2024-06-24,Financials
+klac,1997-09-30,Information Technology
+khc,2015-07-06,Consumer Staples
+kr,1957-03-04,Consumer Staples
+lhx,2008-09-22,Industrials
+lh,2004-11-01,Health Care
+lrcx,2012-06-29,Information Technology
+lvs,2019-10-03,Consumer Discretionary
+ldos,2019-08-09,Industrials
+len,2005-10-04,Consumer Discretionary
+lii,2024-12-23,Industrials
+lly,1970-12-31,Health Care
+lin,1992-07-01,Materials
+lyv,2019-12-23,Communication Services
+lmt,1957-03-04,Industrials
+l,1995-05-31,Financials
+low,1984-02-29,Consumer Discretionary
+lulu,2023-10-18,Consumer Discretionary
+lite,2026-03-23,Information Technology
+lyb,2012-09-05,Materials
+mtb,2004-02-23,Financials
+mpc,2011-07-01,Energy
+mar,1998-05-29,Consumer Discretionary
+mrsh,1987-08-31,Financials
+mlm,2014-07-02,Materials
+mrvl,2026-06-22,Information Technology
+mas,1981-06-30,Industrials
+ma,2008-07-18,Financials
+mkc,2003-03-20,Consumer Staples
+mcd,1970-06-30,Consumer Discretionary
+mck,1999-01-13,Health Care
+mdt,1986-10-31,Health Care
+mrk,1957-03-04,Health Care
+meta,2013-12-23,Communication Services
+met,2000-12-11,Financials
+mtd,2016-09-06,Health Care
+mgm,2017-07-26,Consumer Discretionary
+mchp,2007-09-07,Information Technology
+mu,1994-09-27,Information Technology
+msft,1994-06-01,Information Technology
+maa,2016-12-02,Real Estate
+mrna,2021-07-21,Health Care
+mdlz,2012-10-02,Consumer Staples
+mpwr,2021-02-12,Information Technology
+mnst,2012-06-28,Consumer Staples
+mco,1998-07-01,Financials
+ms,1993-07-29,Financials
+mos,2011-09-26,Materials
+msi,1957-03-04,Information Technology
+msci,2018-04-04,Financials
+ndaq,2008-10-22,Financials
+ntap,1999-06-25,Information Technology
+nflx,2010-12-20,Communication Services
+nem,1969-06-30,Materials
+nwsa,2013-08-01,Communication Services
+nws,2015-09-18,Communication Services
+nee,1976-06-30,Utilities
+nke,1988-11-30,Consumer Discretionary
+ni,2000-11-02,Utilities
+ndsn,2022-02-15,Industrials
+nsc,1957-03-04,Industrials
+ntrs,1998-01-30,Financials
+noc,1957-03-04,Industrials
+nclh,2017-10-13,Consumer Discretionary
+nrg,2010-01-29,Utilities
+nue,1985-04-30,Materials
+nvda,2001-11-30,Information Technology
+nvr,2019-09-26,Consumer Discretionary
+nxpi,2021-03-22,Information Technology
+orly,2009-03-27,Consumer Discretionary
+oxy,1957-03-04,Energy
+okta,2026-11-04,Information Technology
+odfl,2019-12-09,Industrials
+omc,1997-12-31,Communication Services
+on,2022-06-21,Information Technology
+oke,2010-03-15,Energy
+orcl,1989-08-31,Information Technology
+otis,2020-04-03,Industrials
+pcar,1980-12-31,Industrials
+pkg,2017-07-26,Materials
+pltr,2024-09-23,Information Technology
+panw,2023-06-20,Information Technology
+ph,1985-11-30,Industrials
+payx,1998-10-01,Industrials
+pypl,2015-07-20,Financials
+pnr,2012-10-01,Industrials
+pep,1957-03-04,Consumer Staples
+pfe,1957-03-04,Health Care
+pcg,2022-10-03,Utilities
+pm,2008-03-31,Consumer Staples
+psx,2012-05-01,Energy
+pnw,1999-10-04,Utilities
+pnc,1988-04-30,Financials
+ppg,1957-03-04,Materials
+ppl,2001-10-01,Utilities
+pfg,2002-07-22,Financials
+pg,1957-03-04,Consumer Staples
+pgr,1997-08-04,Financials
+pld,2003-07-17,Real Estate
+pru,2002-07-22,Financials
+ptc,2021-04-20,Information Technology
+peg,1957-03-04,Utilities
+psa,2005-08-19,Real Estate
+phm,1984-04-30,Consumer Discretionary
+q,2025-11-03,Information Technology
+qcom,1999-07-22,Information Technology
+pwr,2009-07-01,Industrials
+dgx,2002-12-12,Health Care
+rl,2007-02-02,Consumer Discretionary
+rjf,2017-03-20,Financials
+rddt,2026-08-18,Communication Services
+o,2015-04-07,Real Estate
+reg,2017-03-02,Real Estate
+regn,2013-05-01,Health Care
+rf,1998-08-28,Financials
+rsg,2008-12-05,Industrials
+rmd,2017-07-26,Health Care
+rvty,1985-05-31,Health Care
+hood,2025-09-22,Financials
+rok,2000-03-12,Industrials
+rol,2018-10-01,Industrials
+rop,2009-12-23,Information Technology
+rost,2009-12-21,Consumer Discretionary
+rcl,2014-12-05,Consumer Discretionary
+rtx,1957-03-04,Industrials
+spgi,1957-03-04,Financials
+crm,2008-09-15,Information Technology
+sndk,2025-11-28,Information Technology
+sbac,2017-09-01,Real Estate
+slb,1957-03-04,Energy
+stx,2012-07-02,Information Technology
+sre,2017-03-17,Utilities
+now,2019-11-21,Information Technology
+shw,1964-06-30,Materials
+spg,2002-06-26,Real Estate
+skyd,1994-09-30,Communication Services
+swks,2015-03-12,Information Technology
+sjm,2008-11-06,Consumer Staples
+sw,2024-07-08,Materials
+sna,1982-09-30,Industrials
+solv,2024-04-01,Health Care
+so,1957-03-04,Utilities
+luv,1994-07-01,Industrials
+swk,1982-09-30,Industrials
+sbux,2000-06-07,Consumer Discretionary
+stt,2003-03-14,Financials
+stld,2022-12-22,Materials
+ste,2019-12-23,Health Care
+syk,2000-12-12,Health Care
+smci,2024-03-18,Information Technology
+syf,2015-11-18,Financials
+snps,2017-03-16,Information Technology
+syy,1986-12-31,Consumer Staples
+tmus,2019-07-15,Communication Services
+trow,2019-07-29,Financials
+ttwo,2018-03-19,Communication Services
+tpr,2004-09-01,Consumer Discretionary
+trgp,2022-10-12,Energy
+tgt,1976-12-31,Consumer Staples
+tel,2011-10-17,Information Technology
+tdy,2020-06-22,Information Technology
+ter,2020-09-21,Information Technology
+tsla,2020-12-21,Consumer Discretionary
+txn,2001-03-12,Information Technology
+tpl,2024-11-26,Energy
+txt,1978-12-31,Industrials
+tmo,2004-08-03,Health Care
+tjx,1985-09-30,Consumer Discretionary
+tko,2025-03-24,Communication Services
+tsco,2014-01-24,Consumer Discretionary
+tt,2010-11-17,Industrials
+tdg,2016-06-03,Industrials
+trv,2002-08-21,Financials
+trmb,2021-01-21,Information Technology
+tfc,1997-12-04,Financials
+twlo,2026-10-06,Information Technology
+tyl,2020-06-22,Information Technology
+tsn,2005-08-10,Consumer Staples
+usb,1999-11-01,Financials
+uber,2023-12-18,Industrials
+udr,2016-03-07,Real Estate
+ulta,2016-04-18,Consumer Discretionary
+unp,1957-03-04,Industrials
+ual,2015-09-03,Industrials
+ups,2002-07-22,Industrials
+uri,2014-09-20,Industrials
+unh,1994-07-01,Health Care
+uhs,2014-09-20,Health Care
+vlo,2002-12-20,Energy
+veev,2026-05-07,Health Care
+vtr,2009-03-04,Real Estate
+vlto,2023-10-02,Industrials
+vrsn,2006-02-01,Information Technology
+vrsk,2015-10-08,Industrials
+vz,1983-11-30,Communication Services
+vrtx,2013-09-23,Health Care
+vrt,2026-03-23,Industrials
+vtrs,2004-04-23,Health Care
+vici,2022-06-08,Real Estate
+v,2009-12-21,Financials
+vst,2024-05-08,Utilities
+vmrk,2001-12-03,Real Estate
+vmc,1999-06-30,Materials
+vylr,2026-10-01,Consumer Staples
+wrb,2019-12-05,Financials
+gww,1981-06-30,Industrials
+wab,2019-02-27,Industrials
+wmt,1982-08-31,Consumer Staples
+dis,1976-06-30,Communication Services
+wm,1998-08-31,Industrials
+wat,2002-01-02,Health Care
+wec,2008-10-31,Utilities
+wfc,1976-06-30,Financials
+well,2009-01-30,Real Estate
+wst,2020-05-22,Health Care
+wdc,2009-07-01,Information Technology
+wy,1979-10-01,Real Estate
+wsm,2025-03-24,Consumer Discretionary
+wmb,1975-03-31,Energy
+wtw,2016-01-05,Financials
+wday,2024-12-23,Information Technology
+wynn,2008-11-14,Consumer Discretionary
+xel,1957-03-04,Utilities
+xyl,2011-11-01,Industrials
+yum,1997-10-06,Consumer Discretionary
+zbra,2019-12-23,Information Technology
+zbh,2001-08-07,Health Care
+zts,2013-06-21,Health Care

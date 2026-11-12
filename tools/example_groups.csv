@@ -1,0 +1,24 @@
+group,ticker
+# one row per ticker -> make_pairs.py pairs every ticker with every other ticker in the same group.
+# the first 4 groups extend the pairs main.cpp already tests (xom/cvx, cola/pepsi, v/ma, cuk/ccl)
+energy,xom
+energy,cvx
+energy,cop
+energy,eog
+beverages,ko
+beverages,pep
+beverages,kdp
+payments,v
+payments,ma
+payments,axp
+cruise,ccl
+cruise,cuk
+cruise,rcl
+cruise,nclh
+# controls: funds tracking the same index or metal -> should be cointegrated if the data is clean
+# (README finding: stooq's ivv was missing dividend adjustments, so spy/ivv is worth re-checking here)
+sp500_etfs,spy
+sp500_etfs,ivv
+sp500_etfs,voo
+gold_etfs,gld
+gold_etfs,iau

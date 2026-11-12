@@ -1,0 +1,23 @@
+# large raw / imported data (see DoThis.md ground rule 1)
+ALLDATA/
+Data/Input/stooq/
+
+# build + tooling
+build/
+build-*/
+.venv/
+.cache/
+.DS_Store
+__pycache__/
+*.pyc
+
+# temporary monte carlo price files
+Data/Output/montecarlo/paths_tmp/
+
+# walk-forward output: the big per-trade files are rebuilt by tools/reproduce.sh, the summaries are kept
+Data/Output/portfolio/**/*_tradepnl.csv
+Data/Output/portfolio/**/*_trades.csv
+Data/Output/portfolio/**/*_screen.csv
+Data/Output/portfolio/dev/*_daily.csv
+Data/Output/portfolio/full/*_daily.csv
+Data/Output/portfolio/design/

@@ -1,0 +1,25 @@
+# the original single-pair pipeline: the reference that verify, dump, --old-data and bench --legacy compare against
+Backtest.cpp
+Backtest.h
+Cointegration.cpp
+Cointegration.h
+DataLoader.cpp
+DataLoader.h
+Evaluation.cpp
+Evaluation.h
+Filters.cpp
+Filters.h
+Kalman.cpp
+Kalman.h
+Matrix.h
+Metrics.cpp
+Metrics.h
+Signals.cpp
+Signals.h
+Trading.cpp
+Trading.h
+WalkForward.cpp
+WalkForward.h
+# the hold-out seal
+Holdout.cpp
+Holdout.h

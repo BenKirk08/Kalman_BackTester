@@ -1,0 +1,14 @@
+label,fileA,fileB,group
+v_ma,Data/Input/v_Data.csv,Data/Input/ma_Data.csv,original
+xom_cvx,Data/Input/xom_Data.csv,Data/Input/cvx_Data.csv,original
+cuk_ccl,Data/Input/cuk_Data.csv,Data/Input/ccl_Data.csv,original
+cola_pepsi,Data/Input/cola_Data.csv,Data/Input/pepsi_Data.csv,original
+syn_beta,Data/Input/synthetic/syn_beta_a_Data.csv,Data/Input/synthetic/syn_beta_b_Data.csv,synthetic
+syn_break,Data/Input/synthetic/syn_break_a_Data.csv,Data/Input/synthetic/syn_break_b_Data.csv,synthetic
+syn_corr,Data/Input/synthetic/syn_corr_a_Data.csv,Data/Input/synthetic/syn_corr_b_Data.csv,synthetic
+syn_drift,Data/Input/synthetic/syn_drift_a_Data.csv,Data/Input/synthetic/syn_drift_b_Data.csv,synthetic
+syn_fast,Data/Input/synthetic/syn_fast_a_Data.csv,Data/Input/synthetic/syn_fast_b_Data.csv,synthetic
+syn_fat,Data/Input/synthetic/syn_fat_a_Data.csv,Data/Input/synthetic/syn_fat_b_Data.csv,synthetic
+syn_indep,Data/Input/synthetic/syn_indep_a_Data.csv,Data/Input/synthetic/syn_indep_b_Data.csv,synthetic
+syn_jump,Data/Input/synthetic/syn_jump_a_Data.csv,Data/Input/synthetic/syn_jump_b_Data.csv,synthetic
+syn_slow,Data/Input/synthetic/syn_slow_a_Data.csv,Data/Input/synthetic/syn_slow_b_Data.csv,synthetic

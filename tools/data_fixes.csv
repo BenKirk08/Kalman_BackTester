@@ -1,0 +1,8 @@
+ticker,action,date,reason
+# data fixes applied by "BackTester walkforward" (DECISIONS.md D25). found by tools/data_qa.py on pre-2023 bars.
+# start = the ticker's history begins on this date (everything before is dropped, nothing is patched)
+# drop  = the ticker is removed from the universe
+hst,start,2009-11-13,close of 2009-11-12 is 10x too low (6.04 -> 0.604 -> 6.02): a single bad print in the vendor file
+lii,start,2006-03-20,close of 2006-03-17 is 10x too low (24.07 -> 2.38 -> 23.53): a single bad print in the vendor file
+nue,start,2007-01-17,close of 2007-01-16 is 10x too low (34.91 -> 3.47 -> 34.92): a single bad print in the vendor file
+vrt,drop,,missing 21 of 1114 SPY sessions before 2023 (1.89%, the limit is 1%)
